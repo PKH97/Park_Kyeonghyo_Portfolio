@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이력서</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./js/index.js">
+
+    <script>
+        $(document).ready(function() {
+            $(".tab_title li").click(function() {
+                let idx = $(this).index();
+                $(".tab_title li").removeClass("on");
+                $(".tab_title li").eq(idx).addClass("on");
+                $(".tab_content > div").hide();
+                $(".tab_content > div").eq(idx).show();
+            })
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <h1>Park Kyeonghyo</h1>
+        <div class="header_linestyle">
+            <div class="point_line01"></div>
+            <div class="under_line"></div>
+            <div class="point_line02"></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <ul class="tab_title">
+            <li class="on">Profile</li>
+            <li>Skill</li>
+            <li>Project</li>
+            <li>About</li>
+        </ul>
+
+        <div class="tab_content">
+            <div class="tab_profile on">
+                <a class="profile_image" href="https://github.com/PKH97">
+                    <img src="./images/profile.jpg" alt="">
+                    <i class="fa-brands fa-github">
+                        <span>깃허브로 이동</span>
+                    </i>
+                </a>
+                <div class="profile_text">
+                    <div class="self_introduction">
+                        <h2>자기소개</h2>
+                        <div class="self_linestyle">
+                            <div class="self_middle_line"></div>
+                            <div class="self_middle_point01"></div>
+                            <div class="self_middle_point02"></div>
+                        </div>
+                        <h3><p>*</p>
+                            동해물과 백두산이 마르고 닳도록
+                        </h3>
+                        <h3><p>*</p>
+                            하느님이 보우하사 우리나라만세
+                        </h3>
+                        <h3><p>*</p>
+                            무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세
+                        </h3>
+                    </div>
+                    <div class="my_information">
+                        <h2>인적사항</h2>
+                        <div class="my_linestyle">
+                            <div class="my_middle_line"></div>
+                            <div class="my_middle_point01"></div>
+                            <div class="my_middle_point02"></div>
+                        </div>
+                        <h3><p>*</p>
+                            동해물과 백두산이 마르고 닳도록
+                        </h3>
+                        <h3><p>*</p>
+                            하느님이 보우하사 우리나라만세
+                        </h3>
+                        <h3><p>*</p>
+                            무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab_skill">
+                <div class="tab_skill_list">
+                    <ul class="skill_frontend">
+                        <li>
+                            <img src="./images/html.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/css.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/js.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/jquery.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/react.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/node.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/mongo.png" alt="">
+                        </li>
+                    </ul>
+                    <ul class="skill_backend">
+                        <li>
+                            <img src="./images/java.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/spring-boot.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/mqsql.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/AJAX.png" alt="" style="width: 100px; height: 48px; margin-top: 20px;">
+                        </li>
+                        <li>
+                            <img src="./images/apache-tomcat.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/mybatis.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tab_project">
+                <div class="project_left">
+                    <h2>back end</h2>
+                    <div class="line_styles">
+                        <div class="middle_line"></div>
+                        <div class="middle_point"></div>
+                        <div class="middle_point"></div>
+                    </div>
+                    <div>
+                        <h3>카카오 이모티콘샵</h3>
+                        <h4><strong>*</strong></h4>
+                        <h4><strong>*</strong></h4>
+                        <h4><strong>*</strong></h4>
+                    </div>
+                </div>
+                <div class="project_right">
+                    <h2>front end</h2>
+                    <div class="line_styles">
+                        <div class="middle_line"></div>
+                        <div class="middle_point"></div>
+                        <div class="middle_point"></div>
+                    </div>
+                    <div>
+                        <h3>대전 예술의 전당</h3>
+                        <h4><strong>*</strong></h4>
+                        <h4><strong>*</strong></h4>
+                        <h4><strong>*</strong></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab_about">
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

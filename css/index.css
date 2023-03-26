@@ -1,0 +1,371 @@
+/* =============== 상단 ============== */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 255px;
+
+    background-color: #163016;
+}
+.header h1 {
+    font-size: 70px;
+    font-weight: 900;
+    text-align: center;
+    color: #948651;
+}
+
+.header_linestyle {
+    display: flex;
+
+    padding-top: 20px;
+    padding-left: 350px;
+
+    width: 1200px;
+    height: 10px;
+}
+.point_line01 {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+    background-color: #948651;
+}
+.under_line {
+    margin-top: 3.5px;
+
+    width: 1200px;
+    height: 3px;
+    background-color: #948651;
+}
+.point_line02 {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+    background-color: #948651;
+}
+
+/* =============== 컨테이너 ============== */
+.container{
+    width: 100%;
+    height: 700px;
+
+    /* background-color: #fff; */
+    /* background-color: lightcyan; */
+}
+
+/* =============== 텝메뉴 타이틀 ============== */
+.tab_title {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 42px;
+
+    /* background-color: lightcoral; */
+    background-color: #163016;
+    border-bottom: 3px solid #948651;
+}
+.tab_title li {
+    width: 200px;
+    height: 31px;
+
+    padding: 4px 15px;
+
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+
+    border: 3px solid #948651;
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
+    background-color: #163016;
+
+    cursor: pointer;
+}
+.tab_title li.on {
+    color: #163016;
+
+    border-bottom: 3px solid #fff;
+    background-color: #fff;
+}
+
+/* =============== 텝메뉴 콘텐츠 ============== */
+.tab_content {
+    margin-top: 80px;
+    /* background-color: lightsalmon; */
+}
+
+/* =============== 텝메뉴 프로필 ============== */
+.tab_profile {
+    display: none;
+}
+.tab_profile.on {
+    display: block;
+    display: flex;
+}
+.profile_image {
+    margin-left: 80px;
+    margin-right: 35px;
+
+    width: 350px;
+    height: 350px;
+
+    border: 3px solid #948651;
+    border-radius: 50%;
+    background-color: #163016;
+    cursor: pointer;
+}
+.fa-github{
+    position: relative;
+    left: 150px;
+    bottom: 200px;
+
+    display: none;
+    font-size: 50px;
+    color: #163016;
+}
+.fa-github span {
+    position: relative;
+    top: 35px;
+    right: 112px;
+
+    padding: 5px;
+
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    color: #948651;
+
+    border: 3px solid #948651;
+    border-radius: 5px;
+    background-color: #163016;
+}
+.profile_image:hover {
+    opacity: .7;
+}
+.profile_image:hover .fa-github {
+    display: block;
+}
+.profile_image img {
+    width: 350px;
+    height: 350px;
+    
+    border-radius: 50%;
+
+    opacity: 1;
+    -webkit-transition: .10s ease-in-out;
+    transition: .10s ease-in-out;
+}
+
+.profile_text {
+    display: flex;
+
+    width: 1500px;
+}
+.self_introduction {
+    padding-left: 50px;
+    padding-top: 50px;
+
+    width: 600px;
+}
+.self_introduction h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.self_linestyle {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+    width: 260px;
+    height: 10px;
+}
+.self_middle_line {
+    margin-top: 2px;
+
+    width: 230px;
+    height: 5px;
+
+    border-radius: 5px;
+    background-color: #948651;
+}
+.self_middle_point01 {
+    margin-top: 1px;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+    background-color: #948651;
+}
+.self_middle_point02 {
+    margin-top: 1px;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+    background-color: #948651;
+}
+.self_introduction h3 {
+    display: flex;
+
+    margin-right: 15px;
+    margin-bottom: 5px;
+
+    font-size: 17px;
+}
+.self_introduction p {
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+
+.my_information {
+    padding-left: 50px;
+    padding-top: 50px;
+
+    width: 600px;
+}
+.my_information h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.my_linestyle {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+    width: 260px;
+    height: 10px;
+}
+.my_middle_line {
+    margin-top: 2px;
+
+    width: 230px;
+    height: 5px;
+
+    border-radius: 5px;
+    background-color: #948651;
+}
+.my_middle_point01 {
+    margin-top: 1px;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+    background-color: #948651;
+}
+.my_middle_point02 {
+    margin-top: 1px;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+    background-color: #948651;
+}
+.my_information h3 {
+    display: flex;
+
+    margin-right: 15px;
+    margin-bottom: 5px;
+
+    font-size: 17px;
+}
+.my_information p {
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+
+
+/* =============== 텝메뉴 스킬 ============== */
+.tab_skill {
+    display: none;
+}
+.tab_skill_list {
+    display: flex;
+
+    width: 1300px;
+    height: 400px;
+
+    background-color: aquamarine;
+}
+
+.skill_frontend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 10px 15px 5px 10px;
+
+    width: 330px;
+    height: 340px;
+
+    background-color: #163016;
+}
+.skill_frontend li {
+    width: 100px;
+    height: 100px;
+    
+    border: 3px solid #948651;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.skill_frontend img {
+    padding: 5px;
+
+    width: 90px;
+    height: 90px;
+    
+    border-radius: 10px;
+}
+
+.skill_backend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 10px 15px 5px 10px;
+
+    width: 330px;
+    height: 340px;
+
+    background-color: #163016;
+}
+.skill_backend li {
+    width: 100px;
+    height: 100px;
+
+    border: 3px solid #948651;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.skill_backend img {
+    padding: 5px;
+
+    width: 90px;
+    height: 90px;
+
+    border-radius: 10px;
+}
+
+/* =============== 텝메뉴 프로젝트 ============== */
+.tab_project {
+    display: none;
+}
+
+/* =============== 텝메뉴 어바웃 ============== */
+.tab_about {
+    display: none;
+}
