@@ -1,0 +1,244 @@
+/* =============== 텝메뉴 프로필 ============== */
+.tab_profile {
+    display: none;
+}
+.tab_profile.on {
+    display: flex;
+    justify-content: center;
+
+    width: 1100px;
+    height: 500px;
+
+    border: 2px solid #dbb9b8;
+    background-color: #fff;
+}
+.profile_image {
+    display: flex;
+
+    margin-top: 65px;
+    margin-right: 50px;
+    margin-left: 80px;
+
+    width: 350px;
+    height: 350px;
+
+    border: 3px solid #dbb9b8;
+    border-radius: 50%;
+    background-color: #163016;
+    cursor: pointer;
+}
+.profile_image img {
+    width: 350px;
+    height: 350px;
+    
+    border-radius: 50%;
+
+    opacity: 1;
+    -webkit-transition: .10s ease-in-out;
+    transition: .10s ease-in-out;
+}
+
+.profile_hover_button {
+    display: none;
+
+    position: relative;
+    right: 245px;
+    top: 130px;
+
+    width: 150px;
+    height: 70px;
+}
+.profile_hover_button i{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 10px;
+
+    font-size: 50px;
+    text-align: center;
+    color: #dbb9b8;
+}
+.profile_hover_button span {
+    display: flex;
+    justify-content: center;
+
+    padding: 5px 10px;
+
+    width: 130px;
+    height: 30px;
+
+    font-size: 17px;
+    text-align: center;
+    color: #dbb9b8;
+
+    border: 3px solid #dbb9b8;
+    background-color: #163016;
+}
+.profile_image:hover {
+    opacity: .7;
+}
+.profile_image:hover .profile_hover_button {
+    display: block;
+}
+
+.profile_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    margin-top: 10px;
+    padding-left: 50px;
+
+    width: 680px;
+    height: 480px;
+
+    border-left: 2px dashed #dbb9b8;
+}
+.self_introduction {
+    width: 650px;
+    height: 160px;
+}
+.self_introduction h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 5px;
+
+    color: #163016;
+}
+.self_linestyle {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+    width: 260px;
+    height: 10px;
+}
+.self_middle_line {
+    margin-top: 2px;
+
+    width: 230px;
+    height: 5px;
+
+    border-radius: 5px;
+    background-color: #dbb9b8;
+}
+.self_middle_point01 {
+    margin-top: 1px;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+    background-color: #dbb9b8;
+}
+.self_middle_point02 {
+    margin-top: 1px;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+    background-color: #dbb9b8;
+}
+.self_introduction ul {
+    display: flex;
+    flex-flow: column wrap;
+}
+.self_introduction li {
+    display: flex;
+}
+.self_introduction p {
+    margin-right: 10px;
+    margin-bottom: 15px;
+    font-weight: 800;
+    color: #af908e;
+}
+.self_introduction h3 {
+    margin-bottom: 5px;
+    margin-left: 15px;
+
+    font-size: 17px;
+    color: #163016;
+}
+
+
+.my_information {
+    width: 650px;
+    height: 195px;
+}
+.my_information h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 5px;
+
+    color: #163016;
+}
+.my_linestyle {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+    width: 260px;
+    height: 10px;
+}
+.my_middle_line {
+    margin-top: 2px;
+
+    width: 230px;
+    height: 5px;
+
+    border-radius: 5px;
+    background-color: #dbb9b8;
+}
+.my_middle_point01 {
+    margin-top: 1px;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+    background-color: #dbb9b8;
+}
+.my_middle_point02 {
+    margin-top: 1px;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+    background-color: #dbb9b8;
+}
+.my_information ul {
+    display: flex;
+    flex-flow: column wrap;
+}
+.my_information li {
+    display: flex;
+}
+.my_information p {
+    margin-right: 10px;
+    margin-bottom: 15px;
+
+    font-weight: 800;
+    color: #af908e;
+}
+.my_information a {
+    margin-bottom: 5px;
+    margin-left: 15px;
+    font-size: 17px;
+    font-weight: 800;
+    color: #163016;
+}
+.my_information a:hover {
+    color: #af908e;
+    text-decoration: underline;
+}
+.my_information h3 {
+    margin-bottom: 5px;
+    margin-left: 15px;
+    font-size: 17px;
+    color: #163016;
+}

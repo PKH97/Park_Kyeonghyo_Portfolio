@@ -1,0 +1,189 @@
+/* =============== 텝메뉴 스킬 ============== */
+.tab_skill {
+    display: none;
+}
+.tab_skill_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 1100px;
+    height: 500px;
+
+    border: 2px solid #dbb9b8;
+
+    background-color: #fff;
+}
+
+.tab_skill_title {
+    display: flex;
+    justify-content: space-between;
+
+    width: 780px;
+    height: 60px;
+}
+.skill_front {
+    display: flex;
+    flex-direction: column;
+}
+.skill_back {
+    display: flex;
+    flex-direction: column;
+}
+.skill_front h2 {
+    font-size: 30px;
+    color: #163016;
+}
+.skill_back h2 {
+    font-size: 30px;
+    color: #163016;
+}
+.skill_front_linestyle {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+    width: 260px;
+    height: 10px;
+}
+.skill_front_line {
+    margin-top: 2px;
+
+    width: 230px;
+    height: 5px;
+
+    border-radius: 5px;
+    background-color: #dbb9b8;
+}
+.skill_front_point01 {
+    margin-top: 1px;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+    background-color: #dbb9b8;
+}
+.skill_front_point02 {
+    margin-top: 1px;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+    background-color: #dbb9b8;
+}
+
+.skill_back_linestyle {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+    width: 260px;
+    height: 10px;
+}
+.skill_back_line {
+    margin-top: 2px;
+
+    width: 230px;
+    height: 5px;
+
+    border-radius: 5px;
+    background-color: #dbb9b8;
+}
+.skill_back_point01 {
+    margin-top: 1px;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+    background-color: #dbb9b8;
+}
+.skill_back_point02 {
+    margin-top: 1px;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+    background-color: #dbb9b8;
+}
+
+.tab_skill_list {
+    display: flex;
+    justify-content: space-between;
+
+    width: 950px;
+    height: 400px;
+
+    animation: tab_skill_list 1.5s ease-in-out both;
+}
+@keyframes tab_skill_list {
+    0%{
+        clip-path:polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+        transform:translateY(100%);
+    }
+    95%{
+        transform:translateY(0%);
+    }
+    100%{
+        clip-path:polygon(0% 00%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+.skill_frontend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 10px 15px 5px 10px;
+
+    width: 330px;
+    height: 340px;
+}
+.skill_frontend li {
+    width: 100px;
+    height: 100px;
+    
+    border: 3px solid #dbb9b8;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.skill_frontend img {
+    padding: 5px;
+
+    width: 90px;
+    height: 90px;
+    
+    border-radius: 10px;
+}
+
+.skill_backend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 10px 15px 5px 10px;
+
+    width: 330px;
+    height: 230px;
+}
+.skill_backend li {
+    width: 100px;
+    height: 100px;
+
+    border: 3px solid #dbb9b8;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.skill_backend img {
+    padding: 5px;
+
+    width: 90px;
+    height: 90px;
+
+    border-radius: 10px;
+}

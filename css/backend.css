@@ -1,0 +1,11 @@
+/* =============== 텝메뉴 프로젝트: 백엔드 ============== */
+.tab_back_project {
+    display: none;
+}
+.tab_back_box {
+    width: 1100px;
+    height: 500px;
+
+    border: 2px solid #dbb9b8;
+    background-color: #fff;
+}

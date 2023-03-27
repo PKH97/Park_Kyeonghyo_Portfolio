@@ -1,0 +1,26 @@
+/* =============== 텝메뉴 프로젝트: 프론트 ============== */
+.tab_front_project {
+    display: none;
+}
+.tab_front_box {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1100px;
+    height: 500px;
+
+    border: 2px solid #dbb9b8;
+    background-color: #fff;
+}
+.front_left {
+    width: 500px;
+    height: 500px;
+
+    background-color: lightblue;
+}
+.front_right {
+    width: 500px;
+    height: 500px;
+
+    background-color: lightcoral;
+}
